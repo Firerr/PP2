@@ -1,0 +1,23 @@
+html, body {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr; /* navbar content */
+}
+
+main {
+  background: hsl(192, 25%, 65%) url(https://media.licdn.com/dms/image/D4D12AQEwyXBntfTThw/article-cover_image-shrink_720_1280/0/1659250553931?e=2147483647&v=beta&t=t2RNu24hGF7CBMPJGnyH1rD5kYIvz2fhK35Yz2BJ9pc) top center no-repeat;
+}
+
+.item-row {
+  display: grid; /*  Make a row */
+  grid-template-columns: 1fr auto auto auto; /* content  doneBtn updateBtn deleteBtn */
+  gap: 0.5em; /* Spaces between content, especially buttons */
+  align-items: center; /* Line up text vertically */
+}
+
+
+.button *,
+.btn *,
+button *{
+    pointer-events: none; /* stops icons being the target of JS click events */
+}
